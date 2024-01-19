@@ -7,6 +7,13 @@ export default defineNuxtConfig({
   build: {
     transpile: ["@vuepic/vue-datepicker"],
   },
+  nitro: {
+    esbuild: {
+      options: {
+        target: 'esnext'
+      }
+    }
+  },
   app: {
     head: {
       title: 'Anton Bobylev | Historical Bitcoin Price Data Application',

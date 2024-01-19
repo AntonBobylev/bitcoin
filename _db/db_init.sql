@@ -1,0 +1,69 @@
+-- --------------------------------------------------------
+-- Хост:                         127.0.0.1
+-- Версия сервера:               8.0.35 - MySQL Community Server - GPL
+-- Операционная система:         Win64
+-- HeidiSQL Версия:              12.6.0.6765
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+
+-- Дамп структуры базы данных antonb
+CREATE DATABASE IF NOT EXISTS `antonb` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `antonb`;
+
+-- Дамп структуры для таблица antonb.bitcoin_price_history
+CREATE TABLE IF NOT EXISTS `bitcoin_price_history` (
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `bph_date_time` datetime NOT NULL,
+  `bph_value` decimal(20,6) unsigned NOT NULL DEFAULT '0.000000',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=156 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Дамп данных таблицы antonb.bitcoin_price_history: ~31 rows (приблизительно)
+DELETE FROM `bitcoin_price_history`;
+INSERT INTO `bitcoin_price_history` (`id`, `bph_date_time`, `bph_value`) VALUES
+	(124, '2024-01-18 20:03:31', 41875.992000),
+	(125, '2024-01-18 20:03:34', 41875.992000),
+	(126, '2024-01-18 20:04:12', 41860.651000),
+	(127, '2024-01-18 20:04:39', 41831.972000),
+	(128, '2024-01-18 20:04:41', 41831.972000),
+	(129, '2024-01-18 20:05:18', 41833.540000),
+	(130, '2024-01-18 20:05:19', 41833.540000),
+	(131, '2024-01-18 20:05:20', 41833.540000),
+	(132, '2024-01-18 20:05:23', 41821.016000),
+	(133, '2024-01-18 20:50:23', 41787.918000),
+	(134, '2024-01-18 20:50:24', 41787.918000),
+	(136, '2024-01-18 20:53:46', 41548.304000),
+	(137, '2024-01-19 12:51:39', 41345.720000),
+	(138, '2024-01-19 13:03:21', 41378.728000),
+	(139, '2024-01-19 15:44:51', 41317.635000),
+	(140, '2024-01-19 16:23:36', 41380.752000),
+	(141, '2024-01-19 16:34:50', 41380.019000),
+	(142, '2024-01-19 16:53:37', 41297.373000),
+	(143, '2024-01-19 16:55:02', 41310.209000),
+	(144, '2024-01-19 17:14:24', 41310.103000),
+	(145, '2024-01-19 17:33:15', 40988.861000),
+	(146, '2024-01-19 17:41:07', 40969.599000),
+	(147, '2024-01-19 17:51:23', 41098.618000),
+	(148, '2024-01-19 17:51:24', 41098.618000),
+	(149, '2024-01-19 17:51:25', 41098.618000),
+	(150, '2024-01-19 18:18:52', 41072.141000),
+	(151, '2024-01-19 18:31:47', 40840.154000),
+	(152, '2024-01-19 18:38:23', 40907.058000),
+	(153, '2024-01-19 19:05:06', 40938.960000),
+	(154, '2024-01-19 19:34:33', 40498.044000),
+	(155, '2024-01-19 20:31:56', 40673.321000);
+
+/*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

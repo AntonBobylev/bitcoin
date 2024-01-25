@@ -14,19 +14,19 @@
 <script setup>
 const contactsList = {
   github: {
-    name: "Github",
-    link: "https://github.com/AntonBobylev/",
-    icon: "https://img.icons8.com/?size=256&id=62856&format=png",
+    name: 'Github',
+    link: 'https://github.com/AntonBobylev/',
+    icon: 'https://img.icons8.com/?size=256&id=62856&format=png',
   },
   mail: {
-    name: "Email",
-    link: "mailto:ya-anton3632@yandex.ru",
-    icon: "https://img.icons8.com/?size=256&id=86840&format=png",
+    name: 'Email',
+    link: 'mailto:ya-anton3632@yandex.ru',
+    icon: 'https://img.icons8.com/?size=256&id=86840&format=png',
   },
   location: {
-    name: "Location",
-    link: "https://maps.app.goo.gl/gw4xJ6kFSoPXALVUA",
-    icon: "https://img.icons8.com/?size=256&id=59833&format=png",
+    name: 'Location',
+    link: 'https://maps.app.goo.gl/gw4xJ6kFSoPXALVUA',
+    icon: 'https://img.icons8.com/?size=256&id=59833&format=png',
   },
 };
 </script>

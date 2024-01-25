@@ -1,4 +1,4 @@
-import connection from "@/lib/db.js";
+import connection from '@/lib/db.js';
 import AppUtils from '@/lib/AppUtils.js';
 
 export default defineEventHandler(async (event) => 

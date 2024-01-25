@@ -15,9 +15,9 @@
 
 <script setup>
 const { itemLink, itemIcon, itemContent } = defineProps([
-  "itemLink",
-  "itemIcon",
-  "itemContent",
+  'itemLink',
+  'itemIcon',
+  'itemContent',
 ]);
 </script>
 

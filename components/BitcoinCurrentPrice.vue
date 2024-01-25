@@ -13,9 +13,9 @@
 </template>
 
 <script setup>
-const normalButtonClass = "btn font-bold";
+const normalButtonClass = 'btn font-bold';
 const emptyBitcoinButtonClass =
-  normalButtonClass + " button-empty-bitcoin-value";
+  normalButtonClass + ' button-empty-bitcoin-value';
 
 var currentBitcoinRate = ref(false);
 var currentButtonClass = emptyBitcoinButtonClass;
@@ -25,7 +25,7 @@ const emit = defineEmits(['historyTableShouldBeUpdated']);
 async function onGetCurrentBitcoinValue() 
 {
   const { data, pending, error, refresh } = await useFetch(
-    "/api/getBitcoinCurrentPrice"
+    '/api/getBitcoinCurrentPrice'
   );
 
   currentBitcoinRate.value = data.value;
@@ -37,7 +37,7 @@ async function onGetCurrentBitcoinValue()
 
 async function rememberBitcoinValue(value) 
 {
-  await useFetch("/api/rememberBitcoinCurrentPrice", {
+  await useFetch('/api/rememberBitcoinCurrentPrice', {
     query: { bitcoin_value: value }
   });
 }

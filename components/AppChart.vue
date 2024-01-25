@@ -5,15 +5,15 @@
 </template>
 
 <script setup>
-import { Bar } from "vue-chartjs";
+import { Bar } from 'vue-chartjs';
 
 // WARNING: This component requires chartData object as prop. It won't work without it!
 // const chartData = ref({
-//   labels: ["label_1", "label_2"],
+//   labels: ['label_1', 'label_2'],
 //   datasets: [
 //     {
-//       label: "Example",
-//       backgroundColor: "#f87979",
+//       label: 'Example',
+//       backgroundColor: '#f87979',
 //       data: [0, 100],
 //     },
 //   ],

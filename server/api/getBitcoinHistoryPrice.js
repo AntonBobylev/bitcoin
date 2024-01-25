@@ -1,4 +1,4 @@
-import connection from "@/lib/db.js";
+import connection from '@/lib/db.js';
 import AppUtils from '@/lib/AppUtils.js';
 
 const availableSortingValues = ['asc', 'desc'];

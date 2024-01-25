@@ -27,7 +27,7 @@ await updateStore();
 
 async function updateStore() 
 {
-    const { data, pending, error, refresh } = await useFetch("/api/getBitcoinHistoryPrice");
+    const { data, pending, error, refresh } = await useFetch('/api/getBitcoinHistoryPrice');
 
     if (!data.value || data.value.length < 1) {
         return;

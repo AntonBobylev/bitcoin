@@ -28,11 +28,11 @@
 
 <script setup>
 const chartData = ref({
-  labels: ["blank"],
+  labels: ['blank'],
   datasets: [
     {
-      label: "blank",
-      backgroundColor: "#f87979",
+      label: 'blank',
+      backgroundColor: '#f87979',
       data: [],
     },
   ],
@@ -62,7 +62,7 @@ updateChart();
  * @param {Date=} toDate 
  */
 async function updateChart(fromDate = null, toDate = null) {
-  let params = { sorting: "asc" };
+  let params = { sorting: 'asc' };
 
   if (fromDate) {
     params.fromDate = fromDate;
@@ -73,7 +73,7 @@ async function updateChart(fromDate = null, toDate = null) {
   }
 
   const { data, pending, error, refresh } = await useFetch(
-    "/api/getBitcoinHistoryPrice",
+    '/api/getBitcoinHistoryPrice',
     { params: params }
   );
 
@@ -93,8 +93,8 @@ async function updateChart(fromDate = null, toDate = null) {
     labels: labels,
     datasets: [
       {
-        label: "Bitcoin historical data",
-        backgroundColor: "#12b488",
+        label: 'Bitcoin historical data',
+        backgroundColor: '#12b488',
         data: values,
       },
     ],
@@ -107,7 +107,7 @@ async function updateChart(fromDate = null, toDate = null) {
  */
 async function getChartScales() {
   const { data, pending, error, refresh } = await useFetch(
-    "/api/getBitcoinMinMaxSavedPrice"
+    '/api/getBitcoinMinMaxSavedPrice'
   );
 
   if (!data.value || data.value.length < 1) {
@@ -127,7 +127,7 @@ async function getChartScales() {
  */
 async function getBitcoinMinSavedDate() {
   const { data, pending, error, refresh } = await useFetch(
-    "/api/getBitcoinMinSavedDate"
+    '/api/getBitcoinMinSavedDate'
   );
 
   if (!data.value || data.value.length < 1) {
@@ -172,12 +172,12 @@ function onDatePickerUpdate(value)
 function formatDateTime(datetime)
 {
   if (!datetime) {
-    return "";
+    return '';
   }
 
   datetime = new Date(datetime);
   if (!datetime) {
-    return "";
+    return '';
   }
 
   return datetime.toLocaleString();
